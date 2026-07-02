@@ -14,8 +14,8 @@ spec:
     spec:
       containers:
       - name: api-gateway
-        image: api-gateway:latest
-        imagePullPolicy: Never
+        image: ghcr.io/PipMyCode/api-gateway:latest
+        imagePullPolicy: Always
         ports:
         - containerPort: 8000
         env:
@@ -52,8 +52,8 @@ spec:
     spec:
       containers:
       - name: ingestion-service
-        image: ingestion-service:latest
-        imagePullPolicy: Never
+        image: ghcr.io/PipMyCode/ingestion-service:latest
+        imagePullPolicy: Always
         ports:
         - containerPort: 8081
         env:
@@ -87,8 +87,8 @@ spec:
     spec:
       containers:
       - name: ledger-service
-        image: ledger-service:latest
-        imagePullPolicy: Never
+        image: ghcr.io/PipMyCode/ledger-service:latest
+        imagePullPolicy: Always
         ports:
         - containerPort: 8080
         env:
@@ -137,8 +137,8 @@ spec:
     spec:
       containers:
       - name: wallet-service
-        image: wallet-service:latest
-        imagePullPolicy: Never
+        image: ghcr.io/PipMyCode/wallet-service:latest
+        imagePullPolicy: Always
         ports:
         - containerPort: 8082
         env:
